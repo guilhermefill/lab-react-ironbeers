@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Beers from './pageComponents/Beers';
 import RandomBeer from './pageComponents/RandomBeer';
 import NewBeer from './pageComponents/NewBeer';
+import BeerDetail from './pageComponents/BeerDetail';
 
 ReactDOM.render(
 	<React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.render(
 				<Route path="/beers" element={<Beers />} />
 				<Route path="/random-beer" element={<RandomBeer />} />
 				<Route path="/new-beer" element={<NewBeer />} />
+				<Route path="/beers/:id" element={<BeerDetail />} />
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>,

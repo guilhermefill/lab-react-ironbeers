@@ -4,14 +4,14 @@ import { Link, useParams } from 'react-router-dom';
 
 import Header from '../components/Header';
 
-const RandomBeer = () => {
+const NewBeer = () => {
 	let { id } = useParams();
 	let [beer, setBeer] = useState('beer');
 	let [isLoaded, setIsLoaded] = useState(false);
 
 	useEffect(() => {
 		axios
-			.get(`https://ih-beers-api2.herokuapp.com/beers/random`)
+			.get(`https://ih-beers-api2.herokuapp.com/beers/${id}`)
 			.then((response) => {
 				setBeer(response.data);
 				setIsLoaded(true);
@@ -46,4 +46,4 @@ const RandomBeer = () => {
 	);
 };
 
-export default RandomBeer;
+export default NewBeer;
