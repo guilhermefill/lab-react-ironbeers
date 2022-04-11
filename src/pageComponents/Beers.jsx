@@ -21,7 +21,7 @@ const Beers = () => {
 	}, []);
 
 	return (
-		<div>
+		<div className="App">
 			<Header />
 			{isLoaded ? (
 				beers.map((beer) => {

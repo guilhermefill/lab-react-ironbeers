@@ -7,7 +7,11 @@ const Header = () => {
 	return (
 		<header>
 			<Link to="/">
-				<img src={navbar} alt="" />
+				<img
+					src={navbar}
+					alt=""
+					style={{ width: '670px', maxHeight: `100px` }}
+				/>
 			</Link>
 		</header>
 	);

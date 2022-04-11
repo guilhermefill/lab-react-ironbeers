@@ -20,10 +20,10 @@ const RandomBeer = () => {
 	}, [id]);
 
 	return (
-		<div>
+		<div className="App">
 			<Header />
 			{isLoaded && (
-				<div className="row">
+				<div className="row AppForm">
 					<div className="col">
 						<img
 							src={beer.image_url}

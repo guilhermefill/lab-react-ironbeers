@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
 
+import '../App.css';
+
 import Header from '../components/Header';
 
 const NewBeer = () => {
@@ -20,10 +22,10 @@ const NewBeer = () => {
 	}, [id]);
 
 	return (
-		<div>
+		<div className="App">
 			<Header />
 			{isLoaded && (
-				<div className="row">
+				<div className="row AppForm">
 					<div className="col">
 						<img
 							src={beer.image_url}
